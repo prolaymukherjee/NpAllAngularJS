@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="">
+	<head>
+		<title>This is AngularJs Framwork</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	</head>
+	 <body>
+		<div ng-init="name=['Hamja','Arafath','Shohan','Nayon','Hadi']">
+			<ul>
+				<li ng-repeat="n in name">
+					{{n}}
+				</li>
+			</ul>
+		</div>
+		
+		<div ng-init="bio=[
+		{name:'Hamja',dept:'textile'},
+		{name:'Arafath',dept:'cse'},
+		{name:'Shohan',dept:'textile'},
+		{name:'Nayon',dept:'shape'},
+		{name:'Hadi',dept:'Normal_hons'}]">
+			<ul>
+				<li ng-repeat="b in bio">
+					{{b.name+','+b.dept}}
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
